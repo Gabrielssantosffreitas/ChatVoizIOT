@@ -11,9 +11,9 @@
     <main>
         <section>
             <article>
-                <ul>
-                    <li class="usuario-msg"> test </li>
-                    <li class="bot-msg"> tesntado </li>
+                <ul id="lista-mensagens">
+                    <li class="usuario-msg mensagem"> test </li>
+                    <li class="bot-msg mensagem"> tesntado </li>
                 </ul>
 
                 <div class="chat-footer">
@@ -31,13 +31,13 @@
             </article>
 
             <article class="controls-row">
-                <button id="aumentar-volume" class="volume" aria-label="Aumentar volume">
+                <button id="aumentar-texto" class="volume" aria-label="Aumentar volume">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5">
                         <path d="M12 5v14" />
                         <path d="M5 12h14" />
                     </svg>
                 </button>
-                <button id="diminuir-volume" class="volume" aria-label="Diminuir volume">
+                <button id="diminuir-texto" class="volume" aria-label="Diminuir volume">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5">
                         <path d="M5 12h14" />
                     </svg>
@@ -47,4 +47,8 @@
     </main>
     <footer> <span> feito por pessoas</span></footer>
 </body>
+<script type="module" src="TamanhoDaMensagem.js"></script>
+<script type="module" src="Ouvir.js"></script>
+<script src="Mensagens.js"></script>
+<script type="module" src="Voice.js"></script>
 </html>
