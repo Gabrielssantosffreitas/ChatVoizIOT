@@ -1,5 +1,5 @@
 import Falar from "./Voice.js";
-
+import  chamarApi  from "./Api.js";
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const reconhecer = new SpeechRecognition()
@@ -11,6 +11,7 @@ reconhecer.onresult = (evento) => {
         console.log("Texto reconhecido: ", texto)
         addMensagem("usuario", texto);
         Falar(texto);
+        chamarApi(texto);
         
         
     }
